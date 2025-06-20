@@ -20,3 +20,7 @@ description = "Numba nopython, Parallel=True"
 [[framework.postfixes]]
 impl_postfix = "numba_npr"
 description = "Numba nopython, Parallel=True, prange"
+
+[[framework.postfixes]]
+impl_postfix = "appy"
+description = "APPy"
