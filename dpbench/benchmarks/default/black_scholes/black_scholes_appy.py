@@ -7,7 +7,7 @@ from math import erf, exp, log, sqrt
 import appy
 
 
-@appy.jit(use_file='/nethome/tzhou343/projects/dpbench/.appy_kernels/black_scholes.py')
+@appy.jit#(use_file='/nethome/tzhou343/projects/dpbench/.appy_kernels/black_scholes.py')
 def black_scholes(nopt, price, strike, t, rate, volatility, call, put):
     mr = -rate
     sig_sig_two = volatility * volatility * 2
